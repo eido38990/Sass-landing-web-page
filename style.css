@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: montserrat;
+}
+body .bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+  background-color: #005dff;
+  z-index: -1;
+}
+@media (min-width: 840px) {
+  body .bg {
+    -webkit-clip-path: polygon(0 0, 83% 0, 66% 100%, 0% 100%);
+            clip-path: polygon(0 0, 83% 0, 66% 100%, 0% 100%);
+  }
+}
+body header p {
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  font-size: 1em;
+  margin: 15px 0 0 15px;
+  padding: 15px;
+}
+@media (min-width: 840px) {
+  body main {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "hero card";
+  }
+}
+body main section#card {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 840px) {
+  body main section#card {
+    grid-area: card;
+    align-self: center;
+    margin-left: 50px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 40;
+  }
+}
+body main section#card ul {
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 15px;
+}
+body main section#card ul span {
+  background-color: #ccdfff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+}
+body main section#card li {
+  list-style-type: none;
+  padding: 8px;
+}
+body main section#card li legend {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+body main section#hero {
+  margin: 15px;
+}
+@media (min-width: 840px) {
+  body main section#hero {
+    grid-area: hero;
+    text-align: left;
+    margin: 4em 0 0 4ems;
+  }
+}
+body main section#hero h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+}
+@media (min-width: 840px) {
+  body main section#hero h2 {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 60px;
+  }
+}
+body main section#hero p {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px 0 0 15px;
+}
+@media (min-width: 840px) {
+  body main section#hero p {
+    text-align: left;
+    margin-left: 15px;
+  }
+}
+body main section#hero a {
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #fff5bb;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (min-width: 840px) {
+  body main section#hero a {
+    display: inline-block;
+    width: 40%;
+    margin-left: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
